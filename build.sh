@@ -1,5 +1,5 @@
 export ARCH=arm64
-git clone https://github.com/areyoudeveloper1/android_kernel_xiaomi_mt6768/ -b eleven --depth 1
+git clone https://github.com/HK416AAA/android_kernel_xiaomi_mt6768 -b eleven --depth 1
 export TMPDOWN=$(mktemp -d)
 cd "$TMPDOWN"
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b pie-gsi --depth 1
