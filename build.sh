@@ -1,5 +1,5 @@
 export ARCH=arm64
-git clone https://github.com/HK416AAA/android_kernel_xiaomi_mt6768 -b eleven --depth 1
+git clone https://github.com/HK416AAA/HUAWEI_Kirin990-5G_Kernel -b master --depth 1
 export TMPDOWN=$(mktemp -d)
 cd "$TMPDOWN"
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b pie-gsi --depth 1
@@ -31,5 +31,5 @@ curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh
 mkdir out
 export CROSS_COMPILE="aarch64-linux-android-"
 export CROSS_COMPILE_ARM32="arm-linux-androideabi-"
-make O=out lancelot_defconfig
+make O=out merge_kirin990_defconfig
 make O=out CC=$CC -j$(nproc --all)
