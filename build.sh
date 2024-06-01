@@ -27,7 +27,7 @@ EOF
 
 make ufdt_apply_overlay
 cd /home/runner/work/lancelot-kernel-builder/lancelot-kernel-builder/android_kernel_xiaomi_mt6768/
-curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.2
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
 mkdir out
 export CROSS_COMPILE="aarch64-linux-android-"
 export CROSS_COMPILE_ARM32="arm-linux-androideabi-"
